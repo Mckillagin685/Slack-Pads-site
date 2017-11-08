@@ -1,20 +1,92 @@
 import React, { Component } from 'react';
 import './bulma-0.6.1/css/bulma.css';
+import './font-awesome-4.7.0/css/font-awesome.css';
+import Background from './jason-briscoe-332508.jpg';
+import Logo from './Logo.png';
+
+var sectionStyle = {
+  background: "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + Background + ")",
+  backgroundPosition: "center center",
+  backgroundSize: "cover",
+};
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="level navbar">
-          <h1 className="level-item has-text-centered">Welcome</h1>
-        </header>
-        <body className="columns">
-          <div class="column is-black">Auto</div>
-          <div className="container column is-three-quarters has-text-centered">
-            Something here
+        
+        <section className="hero is-large is-primary" style={ sectionStyle }>
+          <div className="hero-head">
+            <nav className="navbar">
+              <div className="container">
+                <div className="navbar-brand">
+                  <a class="navbar-item">
+                    
+                  </a>
+                </div>
+                <div id="navbarMenuHeroB" className="navbar-menu">
+                  <div className="navbar-end">
+                    <span className="navbar-item">
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
-          <div class="column">Auto</div>
-        </body>
+
+          <div className="hero-body">
+            <div className="container has-text-centered">
+              <div className="title is-spaced">
+                <img src={Logo} alt="Logo"/>
+              </div>
+              <div className="subtitle">
+                <a className="button is-dark is-inverted">
+                  <span className="icon">
+                    <i className="fa fa-github"></i>
+                  </span>
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="level"></div>
+
+        <section className="level">
+          <div className="level-item">
+            <div className="notification">
+              <p className="title is-spaced">
+                Title
+              </p>
+              <p className="subtitle">
+                Subtitle
+              </p>
+            </div>
+          </div>
+          <div className="level-item">
+          <div className="notification">
+            <p className="title is-spaced">
+              Title
+            </p>
+            <p className="subtitle">
+              Subtitle
+            </p>
+          </div>
+        </div>
+        <div className="level-item">
+            <div className="notification">
+              <p className="title is-spaced">
+                Title
+              </p>
+              <p className="subtitle">
+                Subtitle
+              </p>
+            </div>
+          </div>
+        </section>
+
         <footer className="footer">
           <div className="container">
             <div className="content has-centered-text">
