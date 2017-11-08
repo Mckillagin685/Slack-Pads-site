@@ -3,6 +3,7 @@ import './bulma-0.6.1/css/bulma.css';
 import './font-awesome-4.7.0/css/font-awesome.css';
 import Background from './jason-briscoe-332508.jpg';
 import Logo from './Logo.png';
+import Gif from './createfilter.gif';
 
 var sectionStyle = {
   background: "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + Background + ")",
@@ -41,7 +42,7 @@ class App extends Component {
                 <img src={Logo} alt="Logo"/>
               </div>
               <div className="subtitle">
-                <a className="button is-dark is-inverted">
+                <a className="button is-dark is-inverted" href="https://github.com/Mckillagin685/RentFinder">
                   <span className="icon">
                     <i className="fa fa-github"></i>
                   </span>
@@ -52,46 +53,78 @@ class App extends Component {
           </div>
         </section>
 
-        <div className="level"></div>
+        <section className="level"></section>
+        <section className="level"></section>
+        <section className="level"></section>
 
         <section className="level">
           <div className="level-item">
             <div className="notification">
               <p className="title is-spaced">
-                Title
+                Slack integragtion
               </p>
               <p className="subtitle">
-                Subtitle
+                Using Slack's messaging API
+              </p>
+              <p className="subtitle">
+                we are able to give you quick
+              </p>
+              <p className="subtitle">
+                and easy access to Slack-Pads
               </p>
             </div>
           </div>
           <div className="level-item">
-          <div className="notification">
+          <div className="notification notification-padding">
             <p className="title is-spaced">
-              Title
+              Notifications
             </p>
             <p className="subtitle">
-              Subtitle
+              When new results are found
+            </p>
+            <p className="subtitle">
+              choose to be notifed through
+            </p>
+            <p className="subtitle">
+              Slack by rent-bot
             </p>
           </div>
         </div>
         <div className="level-item">
             <div className="notification">
               <p className="title is-spaced">
-                Title
+                Custom search
               </p>
               <p className="subtitle">
-                Subtitle
+                Customize your rental
+              </p>
+              <p className="subtitle">
+                search with our quick
+              </p>
+              <p className="subtitle">
+                easy message prompts
               </p>
             </div>
           </div>
+        </section>
+
+        <section className="level"></section>
+        <section className="level"></section>
+        <section className="level"></section>
+
+        <section className="columns">
+          <div className="column"></div>
+          <div className="column is-half">
+            <img src={Gif} alt="gif"/>
+          </div>
+          <div className="column"></div>
         </section>
 
         <footer className="footer">
           <div className="container">
             <div className="content has-centered-text">
               <p>
-                <strong>Rent-bot</strong> by Lucas Kirsch. The source code is licensed
+                <strong>Slack-Pads</strong> by Lucas Kirsch. The source code is licensed
                 <a href="http://opensource.org/licenses/mit-license.php"> MIT</a>. The website content
                 is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
               </p>
